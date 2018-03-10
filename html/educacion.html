@@ -25,91 +25,97 @@
       </ul>
     </nav>
     <section>
-      <h2></h2> <!--Titulo Educacion-->
+      <h2>Educación</h2> <!--Titulo Educacion-->
         <article>
-          <table> <!--Tabla con estudios realizados-->
-            <tr>
-              <th></th> <!--Año-->
-              <th></th> <!--Institucion-->
-              <th></th> <!--Lugar-->
-              <th></th> <!--Titulo-->
-              <th></th> <!--Culmino?-->
-            </tr>
-            <tr> <!--NextU-->
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr> <!--Irso-->
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr> <!--Educacion IT-->
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr> <!--UTN-->
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr> <!--IPM-->
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
+          <table border="1px" cellpadding="10" cellspacing="0"> <!--Tabla con estudios realizados-->
+            <thead>
+              <tr>
+                <th>Año</th> <!--Año-->
+                <th>Institución</th> <!--Institucion-->
+                <th>Lugar</th> <!--Lugar-->
+                <th>Título</th> <!--Titulo-->
+                <th>¿Culminó?</th> <!--Culmino?-->
+              </tr>
+            </thead>
+            <tbody>
+              <tr> <!--NextU-->
+                <td>2018</td>
+                <td>Next University</td>
+                <td>San Martín</td>
+                <td>Desarrollador Web</td>
+                <td>Cursando</td>
+              </tr>
+              <tr> <!--Irso-->
+                <td>2017</td>
+                <td>Instituto Raúl Scalabrini Ortíz (IRSO)</td>
+                <td>Capital Federal</td>
+                <td>Analista de Sistemas</td>
+                <td>Cursando</td>
+              </tr>
+              <tr> <!--Educacion IT-->
+                <td>2015</td>
+                <td>Educación IT</td>
+                <td>Capital Federal</td>
+                <td>Desarrollador Web</td>
+                <td>Sí</td>
+              </tr>
+              <tr> <!--UTN-->
+                <td>2001</td>
+                <td>Universidad Nacional Tecnológica (UTN)</td>
+                <td>Capital Federal</td>
+                <td>Ingeniero en Sistemas</td>
+                <td>No</td>
+              </tr>
+              <tr> <!--IPM-->
+                <td>1995</td>
+                <td>Instituto Politécnico Modelo (IPM)</td>
+                <td>Capital Federal</td>
+                <td>Técnico Mecánico</td>
+                <td>Sí</td>
+              </tr>
+            </tbody>
           </table>
         </article>
         <article>
-          <h3></h3> <!--Titulo Agregar Estudios-->
-          <form action="educacion.html"> <!--Formulario para agregado de estudios-->
-            <label for=""></label> <!--Año-->
-            <select name="">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
-            <br/>
-            <label for=""></label> <!--Institucion-->
-            <input type="" name="" value=""> <!--Type Text -->
-            <br/>
-            <label for=""></label> <!--Lugar-->
-            <input type="" name="" value=""> <!--Type Text -->
-            <br/>
-            <label for=""></label> <!--Titulo-->
-            <input type="" name="" value=""> <!--Type Text -->
-            <br/>
-            <label for=""></label> <!--¿Culmino?-->
-            <input type="" name="" value=""> <!--Type Radio -->
-            <input type="" name="" value=""> <!--Type Radio -->
-            <br/>
-            <input type="" name="" value=""> <!--Enviar-->
+          <h3>Agregar Estudios</h3> <!--Titulo Agregar Estudios-->
+          <form action="educacion.html" method="post"> <!--Formulario para agregado de estudios-->
+            <label for="institucion">Institución</label> <!--Institucion-->
+            <input type="text" name="institucion" id="institucion" maxlength="50" placeholder="Ingresar nombre de Institución" required> <!--Type Text -->
+
+            <label for="lugar">Lugar</label> <!--Lugar-->
+            <input type="text" name="lugar" id="lugar" maxlength="35" placeholder="Ingrese zona donde cursó" required> <!--Type Text -->
+              <label for="año">Año</label> <!--Año-->
+              <select name="año" id="Año" required>
+                <option value="20">2020</option>
+                <option value="19">2019</option>
+                <option value="18" selected>2018</option>
+                <option value="17">2017</option>
+                <option value="16">2016</option>
+                <option value="15">2015</option>
+                <option value="14">2014</option>
+                <option value="13">2013</option>
+                <option value="12">2012</option>
+              </select>
+              <br/><br/>
+
+
+              <label for="titulo">Título</label> <!--Titulo-->
+              <input type="text" name="titulo" id="titulo" maxlength="30" placeholder="Ingrese Título de la carrera" required> <!--Type Text -->
+            
+              <label for="culmino">¿Culminó?</label> <!--¿Culmino?-->
+              <input type="radio" name="culmino" id="culminosi"><label for="culminosi">Sí</label><!--Type Radio -->
+              <input type="radio" name="culmino" id="culminono"><label for="culminono">No</label> <!--Type Radio -->
+              <input type="radio" name="culmino" id="cursando"><label for="cursando">En curso</label>
+              <br/><br/>
+              <input type="submit" name="enviar" value="Enviar"> <!--Enviar-->
           </form>
         </article>
     </section>
     <footer>
-      <p><a href="mailto:joe@example.com?subject=feedback">email me</a></p> <!--Direccion de correo electronico-->
-      <p></p> <!--Telefono, WhatsApp-->
-      <p></p> <!--LinkedIn-->
-      <p></p> <!--Facebook-->
+      <p>Email: <a href="mailto:miltonbravo81@gmail.com?subject=feedback">miltonbravo81@gmail.com</a></p> <!--Direccion de correo electronico-->
+      <p><img src="../images/whatsapp.svg" alt="Logo de WhatsApp" title="WhatsApp" width="30px"> 1569499595</p> <!--Telefono, WhatsApp-->
+      <p><a href="https://www.linkedin.com/in/milton-bravo-a3b74211a"><img src="../images/linkedin.svg" alt="Logo de Linkedin" title="Linkedin" width="30px"></a></p> <!--Linkedin-->
+      <p><a href="https://www.facebook.com/milton.e.bravo"><img src="../images/facebook.svg" alt="Logo de Facebook" title="Facebook" width="30px"></a></p> <!--Facebook-->
     </footer>
   </body>
 </html>
