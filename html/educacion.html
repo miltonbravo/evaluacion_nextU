@@ -83,7 +83,7 @@
           <h3>Agregar Estudios</h3> <!--Titulo Agregar Estudios-->
           <form action="educacion.html" method="post"> <!--Formulario para agregado de estudios-->
             <label for="institucion">Institución</label> <!--Institucion-->
-            <input type="text" name="institucion" id="institucion" maxlength="50" placeholder="Ingresar nombre de Institución" required> <!--Type Text -->
+            <input type="text" name="institucion" id="institucion" maxlength="50" placeholder="Ingresar nombre de Institución" autofocus required> <!--Type Text -->
             <label for="lugar">Lugar</label> <!--Lugar-->
             <input type="text" name="lugar" id="lugar" maxlength="35" placeholder="Ingrese zona donde cursó" required> <!--Type Text -->
               <label for="año">Año</label> <!--Año-->
@@ -107,6 +107,7 @@
               <input type="radio" name="culmino" id="cursando"><label for="cursando">En curso</label>
               <br/><br/>
               <input type="submit" name="enviar" value="Enviar"> <!--Enviar-->
+              <input type="reset" name="borrar" value="Borrar">
           </form>
         </article>
     </section>
